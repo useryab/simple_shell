@@ -20,9 +20,9 @@
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-### General
+## General
 
-#### Who designed and implemented the original Unix operating system
+### Who designed and implemented the original Unix operating system
 
  **Ken Thompson and Dennis Ritchie are credited with designing and implementing the original Unix operating system at Bell Labs in 1969.**
 
@@ -64,7 +64,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - **Significant impact on computer science and software development:** Shaped programming languages, software engineering practices, and networking technologies.
 
 
-####  Who wrote the first version of the UNIX shell
+###  Who wrote the first version of the UNIX shell
 
 The credit for writing the first version of the UNIX shell goes to **Ken Thompson** at Bell Labs, back in 1971. This shell, simply called **sh**, was included in Versions 1 through 6 of Unix, serving as the primary way for users to interact with the operating system.
 
@@ -79,7 +79,7 @@ Despite its limitations, the Thompson shell paved the way for more sophisticated
 So, while many contributors have shaped the landscape of Unix shells throughout history, **Ken Thompson deserves recognition for writing the very first version, sh, and setting the stage for its evolution.**
 
 
-#### Who invented the B programming language (the direct predecessor to the C programming language)
+### Who invented the B programming language (the direct predecessor to the C programming language)
 
 **Ken Thompson and Dennis Ritchie are credited with inventing the B programming language at Bell Labs around 1969.**
 
@@ -110,7 +110,7 @@ So, while many contributors have shaped the landscape of Unix shells throughout 
 **While B is no longer actively used, its legacy lives on through C and its numerous descendants, which continue to shape modern programming languages and systems development.**
 
 
-#### [How does a shell work](https://medium.com/@muxanz/how-the-shell-works-internally-when-entering-a-command-42f08458870)
+### [How does a shell work](https://medium.com/@muxanz/how-the-shell-works-internally-when-entering-a-command-42f08458870)
 
  **Here's a breakdown of how a shell works:**
 
@@ -165,7 +165,7 @@ So, while many contributors have shaped the landscape of Unix shells throughout 
 - Popular shells include Bash, Zsh, and Fish, each with its own features and syntax.
 
 
-#### [What is a pid and a ppid]( )
+### [What is a pid and a ppid]( )
 
 In the world of computers, processes are constantly running, allowing your system to do everything from displaying images to playing music. To keep track of these processes and manage them effectively, operating systems assign two important identifiers: **PID** and **PPID**.
 
@@ -244,7 +244,7 @@ Here are some reasons why PIDs and PPIDs are important:
 - Be cautious when modifying environment variables, as incorrect changes can affect program behavior or system stability.
 - Consider using language-specific features for safer and more convenient environment manipulation if available.
 
-#### What is the difference between a function and a system call
+### What is the difference between a function and a system call
 
  **Here's a breakdown of the key differences between functions and system calls:**
 
@@ -283,7 +283,7 @@ Here are some reasons why PIDs and PPIDs are important:
 * **Portability:** Functions are often more portable across different operating systems, while system calls are specific to a particular OS.
 
 
-#### How to create processes
+### How to create processes
 
 **Here's a detailed guide on how to create processes in C:**
 
@@ -358,7 +358,7 @@ int main() {
 - Consider using `wait()` or `waitpid()` in the parent process to synchronize with the child process.
 - Be mindful of resource usage and potential for race conditions in multi-process applications.
 
-#### What are the three prototypes of main
+### What are the three prototypes of main
 
 
 * How does the shell use the PATH to find the programs
@@ -398,7 +398,7 @@ int main() {
 - If it finds `ls` in `/usr/bin`, it will execute that version of `ls`.
 
 
-#### How to execute another program with the execve system call
+### How to execute another program with the execve system call
 
 **Here's a guide on executing another program using the `execve` system call in C:**
 
@@ -529,7 +529,7 @@ int main() {
 - Handle errors appropriately to ensure robust execution.
 - Consider using additional options for more advanced control over the waiting behavior.
 
-#### What is EOF / “end-of-file”?
+### What is EOF / “end-of-file”?
 
  **EOF (End-of-File)** is a condition in computer programming that indicates that there is no more data to be read from a file or input stream. It signals the end of the available data, marking the boundary where a program should stop reading.
 
