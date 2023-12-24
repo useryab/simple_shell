@@ -1,6 +1,6 @@
 # 0x16. C - Simple Shell
 
-![shell!](https://en.wikipedia.org/wiki/Command-line_interface#/media/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png)
+![shell](https://miro.medium.com/v2/resize:fit:720/format:webp/1*owO1J3oJvbhkCEWvHRCU_Q.png)
 
  
 ## Resources :books:
