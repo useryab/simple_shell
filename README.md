@@ -11,6 +11,7 @@
 * [Thompson shell](https://en.wikipedia.org/wiki/Thompson_shell)
 * [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
 * [Everything you need to know to start coding your own shell concept page]()
+* [Resources_for_the_shell_project.docx](https://docs.google.com/document/d/1dpniqFW6AxZWi3vplBi8z6htE0ELE7vg/edit?usp=sharing&ouid=100111470824880404318&rtpof=true&sd=true)
 
 ### man or help:
 
