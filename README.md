@@ -11,9 +11,7 @@
 * [Thompson shell](https://en.wikipedia.org/wiki/Thompson_shell)
 * [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
 * [Everything you need to know to start coding your own shell concept page]()
-* []()
-* []()
-* []()
+* [Resources_for_the_shell_project.docx](https://docs.google.com/document/d/1dpniqFW6AxZWi3vplBi8z6htE0ELE7vg/edit?usp=sharing&ouid=100111470824880404318&rtpof=true&sd=true)
 
 ### man or help:
 
@@ -284,7 +282,7 @@ Here are some reasons why PIDs and PPIDs are important:
 * **Portability:** Functions are often more portable across different operating systems, while system calls are specific to a particular OS.
 
 
-## How to create processes
+## [How to create processes]()
 
 **Here's a detailed guide on how to create processes in C:**
 
@@ -359,7 +357,7 @@ int main() {
 - Consider using `wait()` or `waitpid()` in the parent process to synchronize with the child process.
 - Be mindful of resource usage and potential for race conditions in multi-process applications.
 
-## What are the three prototypes of main
+## [What are the three prototypes of main]()
 
 
 * How does the shell use the PATH to find the programs
@@ -399,7 +397,7 @@ int main() {
 - If it finds `ls` in `/usr/bin`, it will execute that version of `ls`.
 
 
-## How to execute another program with the execve system call
+## [How to execute another program with the execve system call]()
 
 **Here's a guide on executing another program using the `execve` system call in C:**
 
@@ -530,7 +528,7 @@ int main() {
 - Handle errors appropriately to ensure robust execution.
 - Consider using additional options for more advanced control over the waiting behavior.
 
-## What is EOF / “end-of-file”?
+## [What is EOF / “end-of-file”?]()
 
  **EOF (End-of-File)** is a condition in computer programming that indicates that there is no more data to be read from a file or input stream. It signals the end of the available data, marking the boundary where a program should stop reading.
 
