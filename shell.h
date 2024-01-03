@@ -10,5 +10,13 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <stdbool.h>
+
+
+char *_strcat(char *dest, char *src);
+char *get_path(char *command);
+char **get_arg(char *buffer);
+void _free(char ***arg);
+void print_arg(char **arg);
 
 #endif
