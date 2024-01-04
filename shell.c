@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
   char *envp[] = {NULL};
   char *buffer = NULL;
   size_t size = 0;
-  int pid, status;
+  int pid, status, read;
   bool is_interactive;
 
   if (argc > 1)
@@ -28,7 +28,8 @@ int main(int argc, char *argv[])
     {
       if (is_interactive)
       printf("#cisfun$ ");
-      if (getline(&buffer, &size, stdin) == -1)
+      read = my_getline(&buffer, &size, stdin);
+      if (read == -1)
 	{
 	  if (feof(stdin))
 	    {
@@ -41,8 +42,9 @@ int main(int argc, char *argv[])
 	      return (-1);
 	    }
 	}
-      buffer[strlen(buffer) - 1] = '\0';
-      
+      else if (read == -2)
+	continue;
+
       arg = get_arg(buffer);
       buffer = NULL;
 
