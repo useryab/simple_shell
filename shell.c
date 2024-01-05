@@ -39,8 +39,10 @@ void execute_command(char **arg, char **envp, char *arg0)
       }
   }
 
-void handle_exit(char **arg, char *argv[])
+void handle_exit(char **arg)
   {
+    int status;
+    
     if (!(strcmp(arg[0], "exit")) && arg[1] == NULL)
       {
 	_free(&arg);
@@ -48,8 +50,9 @@ void handle_exit(char **arg, char *argv[])
       }
     else if (!(strcmp(arg[0], "exit")) && arg[1] != NULL)
       {
+	status = atoi(arg[1]);
 	_free(&arg);
-	printf("%s: not accept argument.\n", argv[0]);
+	exit(status);
       }
   }
 
@@ -108,7 +111,7 @@ int main(int argc, char *argv[])
 	arg = get_arg(buffer);
 	buffer = NULL;
 
-	handle_exit(arg, argv);
+	handle_exit(arg);
 	handle_env(arg);
 
 	if (access(arg[0], X_OK))

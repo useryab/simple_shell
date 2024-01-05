@@ -9,6 +9,7 @@ char **get_arg(char *buffer)
   char *token;
   int i = 0;
   char **arg = malloc(MAX_LENGTH * sizeof(char *));
+
   
   if (arg == NULL)
     {
@@ -16,11 +17,12 @@ char **get_arg(char *buffer)
       return (NULL);
     }
 
-  token = strtok(buffer, " ");
+  token = _strtok(buffer, " ");
+
   while (token != NULL)
     {
       arg[i] = strdup(token);
-      token = strtok(NULL, " ");
+      token = _strtok(NULL, " ");
       i++;
     }
   arg[i] = NULL;

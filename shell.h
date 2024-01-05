@@ -19,6 +19,6 @@ char **get_arg(char *buffer);
 void _free(char ***arg);
 void print_arg(char **arg);
 ssize_t my_getline(char **lineptr, size_t *n, FILE *stream);
-
+char *_strtok(char *str, const char *delim);
 
 #endif

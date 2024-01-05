@@ -10,7 +10,7 @@ char *get_path(char *command)
     char *env = "";
     char *token;
     env = _strcat(env, getenv("PATH"));
-    token = strtok(env, ":");
+    token = _strtok(env, ":");
 
     while (token != NULL)
       {
@@ -34,7 +34,7 @@ char *get_path(char *command)
 		free(real_path);
 		real_path = NULL;
 	      }
-		token = strtok(NULL, ":");
+		token = _strtok(NULL, ":");
 	  }
       }
 
